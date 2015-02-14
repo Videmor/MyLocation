@@ -13,6 +13,8 @@
 		82FD74C61A8F03BD004F86AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82FD74C51A8F03BD004F86AA /* Images.xcassets */; };
 		82FD74C91A8F03BD004F86AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82FD74C71A8F03BD004F86AA /* LaunchScreen.xib */; };
 		82FD74D51A8F03BD004F86AA /* MyUbicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FD74D41A8F03BD004F86AA /* MyUbicationTests.swift */; };
+		82FD74DF1A8F1E4C004F86AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FD74DE1A8F1E4C004F86AA /* MapKit.framework */; };
+		82FD74E11A8F21B8004F86AA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FD74E01A8F21B8004F86AA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		82FD74CE1A8F03BD004F86AA /* MyUbicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyUbicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82FD74D31A8F03BD004F86AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82FD74D41A8F03BD004F86AA /* MyUbicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUbicationTests.swift; sourceTree = "<group>"; };
+		82FD74DE1A8F1E4C004F86AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		82FD74E01A8F21B8004F86AA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FD74E11A8F21B8004F86AA /* CoreLocation.framework in Frameworks */,
+				82FD74DF1A8F1E4C004F86AA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		82FD74B01A8F03BD004F86AA = {
 			isa = PBXGroup;
 			children = (
+				82FD74E01A8F21B8004F86AA /* CoreLocation.framework */,
+				82FD74DE1A8F1E4C004F86AA /* MapKit.framework */,
 				82FD74BB1A8F03BD004F86AA /* MyUbication */,
 				82FD74D11A8F03BD004F86AA /* MyUbicationTests */,
 				82FD74BA1A8F03BD004F86AA /* Products */,
