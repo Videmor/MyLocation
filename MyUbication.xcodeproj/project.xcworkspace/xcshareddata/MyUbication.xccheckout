@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B5429402-7940-429E-AABA-4E2A95F0EEDD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyUbication</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C92A123191A17D6BC051144A6E550B097E0CCCBB</key>
+		<string>github.com:Videmor/MyLocation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyUbication.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C92A123191A17D6BC051144A6E550B097E0CCCBB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Videmor/MyLocation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C92A123191A17D6BC051144A6E550B097E0CCCBB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C92A123191A17D6BC051144A6E550B097E0CCCBB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyUbication</string>
+		</dict>
+	</array>
+</dict>
+</plist>

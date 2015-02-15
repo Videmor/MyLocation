@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 
+
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var myMap: MKMapView!
@@ -22,6 +23,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
+        
+        
+        myMap.delegate = self
+        myMap.showsUserLocation = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,23 +35,35 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        println(locations[0])
-        
         var userLocation: CLLocation = locations[0] as CLLocation
-        var latitude:CLLocationDegrees = userLocation.coordinate.latitude
-        var longitude: CLLocationDegrees = userLocation.coordinate.longitude
-        var latDelta:CLLocationDegrees = 0.01
-        var lonDelta:CLLocationDegrees = 0.01
+//        var latitude:CLLocationDegrees = userLocation.coordinate.latitude
+//        var longitude: CLLocationDegrees = userLocation.coordinate.longitude
+        var latDelta:CLLocationDegrees = 0.014
+        var lonDelta:CLLocationDegrees = 0.014
+        
         var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+//        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        var location = userLocation.coordinate
+
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+
+        
         
         myMap.setRegion(region, animated: true)
+    
+//        var region = MKCoordinateRegion(center: myMap.userLocation.coordinate, span: MKCoordinateSpanMake(0.007, 0.007))
+//        
+//        myMap.setRegion(region, animated: true)
         
-        var annotation = MKPointAnnotation()
-        annotation.coordinate = location
         
-        myMap.addAnnotation(annotation)
+//        myMap.removeAnnotations(myMap.annotations)
+        
+        
+//        var annotation = MKPointAnnotation()
+//        annotation.coordinate = location
+//        annotation.coordinate = myMap.userLocation.coordinate
+        
+//        myMap.addAnnotation(annotation)
     }
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
